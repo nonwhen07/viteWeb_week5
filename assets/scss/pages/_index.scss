@@ -1,3 +1,47 @@
 .index-title {
   font-size: 100px;
 }
+
+
+.title-bar{
+  height: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 24px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+
+  .bar-left{
+    display: flex;
+    align-items: center;
+
+    .title{
+      margin-right: 50px;
+    }
+
+    .form-select{
+      font-size: 16px;
+    }
+  }
+
+  .bar-right{
+    width: 80px;
+
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 20
+    }
+  }
+
+  
+  
+
+
+}

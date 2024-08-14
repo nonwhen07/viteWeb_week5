@@ -1,0 +1,32 @@
+body{
+	font-family: "LATO", "ROBOTO MONO", sans-serif;
+  line-height: 1.5; /* 先設定1.5，還不熟溪XD的設計稿 */
+
+  display: flex;
+
+  .header{
+    width: 23%;
+  }
+  .main{
+    width: 77%;
+  }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+	/* outline: solid 1px; */
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: #ffffff; /* 由於會被主業的css覆蓋先處理，調整後移除 */
+}
+
+img{
+    max-width: 100%;
+    margin: 0 auto;
+	vertical-align: middle;
+}
