@@ -1,14 +1,5 @@
 body{
 	font-family: "LATO", "ROBOTO MONO", sans-serif;
-  line-height: 1.5; /* 先設定1.5，還不熟溪XD的設計稿 */
-
-  // display: flex;
-  // .header{
-  //   width: 23%;
-  // }
-  // .main{
-  //   width: 77%;
-  // }
 }
 
 *,
@@ -21,6 +12,11 @@ a{
 	display: inline-block;
 	text-decoration: none;
 	color: #000000; /* 由於會被主業的css覆蓋先處理，調整後移除 */
+}
+
+code{
+  font-family: "ROBOTO MONO", monospace;
+  color: $success;
 }
 
 img{
