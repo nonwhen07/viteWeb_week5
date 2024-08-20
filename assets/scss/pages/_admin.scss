@@ -19,3 +19,23 @@
 .addbtn:hover{
   color: #198754;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 12
+}
+.icon-unfill {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.tdset{
+  display: flex;
+  align-items: center;
+}

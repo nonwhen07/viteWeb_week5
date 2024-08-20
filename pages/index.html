@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
-    
-    
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>index</title>
   </head>
   <body>
@@ -16,9 +14,9 @@
   
       <main class="px-4 content">
 
-        <header class="py-4">
+        <header class="py-4 mb-3">
           <nav class="navbar navbar-expand-lg w-100">
-            <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="container-fluid d-flex justify-content-between align-items-center px-0">
               <div class="headerleft d-flex">
                 <h1 class="navbar-brand fw-bold mb-0" href="#">Assignment</h1>
                 <ul class="navbar-nav">
@@ -46,79 +44,144 @@
           </nav>
         </header>
 
-      
-        
+
+        <div class="d-flex justify-content-between align-items-center">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                All(4)
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <p class="gray-color" style="margin-bottom: 0px;">2 comments</p>
+        </div>
 
 
         <div class="d-flex">
           <div class="list-group me-3 w-25">
-            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small>3 days ago</small>
+            <a href="#" class="list-group-item list-group-item-action action gray-header p-3" aria-current="true">
+              <div class="d-flex flex-wrap">
+                <div class="title mb-1">
+                  <p class="w-70 mb-0">Chapter Assignment 2</p>
+                  <p class="w-20 mb-0">4 hrs ago</p>
+                </div>
+                <div class="title">
+                  <p class="header w-70 mb-0">Please check this file…</p>
+                  <p class="gray-color w-20 mb-0">Emily Wang</p>
+                </div>
               </div>
-              <p class="mb-1">Some placeholder content in a paragraph.</p>
-              <small>And some small print.</small>
             </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small class="text-muted">3 days ago</small>
+            <a href="#" class="list-group-item list-group-item-action p-3">
+              <div class="d-flex flex-wrap">
+                <div class="title mb-1">
+                  <p class="w-70 mb-0">Chapter Assignment 1</p>
+                  <p class="w-20 mb-0">12 hrs ago</p>
+                </div>
+                <div class="title">
+                  <p class="header w-70 mb-0">My Homework</p>
+                  <p class="gray-color w-20 mb-0">David Xu</p>
+                </div>
               </div>
-              <p class="mb-1">Some placeholder content in a paragraph.</p>
-              <small class="text-muted">And some muted small print.</small>
             </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">List group item heading</h5>
-                <small class="text-muted">3 days ago</small>
+            <a href="#" class="list-group-item list-group-item-action p-3">
+              <div class="d-flex flex-wrap">
+                <div class="title mb-1">
+                  <p class="w-70 mb-0">Final Assignment</p>
+                  <p class="w-20 mb-0">18 hrs ago</p>
+                </div>
+                <div class="title">
+                  <p class="header w-70 mb-0">Have a problem with this…</p>
+                  <p class="gray-color w-20 mb-0">Tony Wei</p>
+                </div>
               </div>
-              <p class="mb-1">Some placeholder content in a paragraph.</p>
-              <small class="text-muted">And some muted small print.</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action p-3">
+              <div class="d-flex flex-wrap">
+                <div class="title mb-1">
+                  <p class="w-70 mb-0">Final Assignment</p>
+                  <p class="w-20 mb-0">19 hrs ago</p>
+                </div>
+                <div class="title">
+                  <p class="header w-70 mb-0">Did I do it right?</p>
+                  <p class="gray-color w-20 mb-0">Christina Lin</p>
+                </div>
+              </div>
             </a>
           </div>
 
-          <div class="w-75">
 
+          <div class="w-75">
             <div class="card mb-3">
               <div class="card-header">
-                <p class="fw-bold">Please check this file for me, thanks!</p>
+                <p class="mb-0" style="font-size: 12px;">Chapter Assignment 2 / HTML&CSS</p>
+                <p class="fw-bold mb-0" style="font-size: 16px;">Please check this file for me, thanks!</p>
               </div>
               <div class="card-body">
-  
+                <div class="d-flex px-2">
+                  <div class="flex-shrink-0">
+                    <img src="../assets/images/emilywang.jpeg" class="rounded-circle object-fit-cover" width="48px" height="48px"
+                      alt="andychen.jpeg">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <p class="fw-bold mb-0">Emily Wang</p>
+                    <time class="gray-color" datetime="">10:38 AM (4 hours ago)</time>
+                    <p class="my-3">
+                      Hi Teacher, the attached file is my homework of chapter 
+                      2. And here comes a question: Why in the following code the 
+                      height of the <code>div</code> is bigger than the height of the
+                      <code>img</code> ? There is a gap below the image, but it doesn’t 
+                      seems to be a padding/margin. 
+                      <br/>
+                      What is the gap or extra space below image?
+                    </p>
+                    <a href="#" class="btn btn-outline-secondary">
+                      <div class="d-flex">
+                        <span class="material-symbols-outlined me-2">
+                          attach_file
+                        </span>
+                        HW-2-David.zip
+                      </div>
+                    </a>
+
+                    <hr class="my-3"/>
+
+                  </div>
+                </div>
+                
+                
+
+
                 <div class="d-flex px-2">
                   <div class="flex-shrink-0">
                     <img src="../assets/images/andychen.jpeg" class="rounded-circle object-fit-cover" width="48px" height="48px"
                       alt="andychen.jpeg">
                   </div>
                   <div class="flex-grow-1 ms-3">
-                    <p class="fw-bold mb-0">Andy Chen</p>
-                    <time datetime="">10:38 AM (4 hours ago)</time>
-                    <p>
-                      Hi Teacher, the attached file is my homework of chapter 
-                      2. And here comes a question: Why in the following code the 
-                      height of the <code>div</code> is bigger than the height of the
-                      <code>img</code> ? There is a gap below the image, but it doesn’t 
-                      seems to be a padding/margin. What is the gap or extra space below 
-                      image?
-                      
-
-                      Hi Teacher, the attached file is my homework of chapter 
-                      2. And here comes a question: Why in the following code the 
-                      height of the <code>div</code> is bigger than the height of the
-                      <code>img</code> ? There is a gap below the image, but it doesn’t 
-                      seems to be a padding/margin. What is the gap or extra space below 
-                      image?
-
-
-                      Hi Teacher, the attached file is my homework of chapter 
-                      2. And here comes a question: Why in the following code the 
-                      height of the <code>div</code> is bigger than the height of the
-                      <code>img</code> ? There is a gap below the image, but it doesn’t 
-                      seems to be a padding/margin. What is the gap or extra space below 
-                      image?
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p class="fw-bold mb-0">Andy Chen (You)</p>
+                      <div class="d-flex">
+                        <span class="icon-unfill material-symbols-outlined me-4">
+                          star_rate
+                        </span>
+                        <span class="material-symbols-outlined">
+                          edit
+                        </span>
+                      </div>
+                    </div>
+                    <time class="gray-color" datetime="">13:24 AM (1 hours ago)</time>
+                    <p class="my-3">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on.
+                      There is space below that line for the descenders you find on letters like g, j, p and q. 
+                      You can: <br/>
+                      • adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the middle ) or 
+                      <br/>
+                      • change the <code>display</code> so it isn’t inline.
                     </p>
-                    <a href="#" class="btn btn-secondary" download>HW-2-David.zip</a>
                   </div>
                 </div>
   
@@ -126,22 +189,79 @@
             </div>
             
             <div class="d-flex justify-content-end position-relative">
-              <button class="btn btn-outline-success me-2" type="button">Mark as read</button>
+              <button class="btn btn-outline-success me-1" type="button">Mark as read</button>
               <button class="btn btn-success" type="button" data-bs-toggle="collapse"
-               data-bs-target="#collapseReply" aria-expanded="false" 
-               aria-controls="collapseReply">Reply</button>
+                data-bs-target="#collapseReply" aria-expanded="false" 
+                aria-controls="collapseReply">Reply</button>
+
               <div class="collapse position-absolute bottom-0 end-0 w-100" id="collapseReply">
-                <div class="card card-body align-items-end">
-                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                  <div class="d-flex">
-                    <button class="btn btn-outline-success me-2" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#collapseReply" aria-expanded="false" aria-controls="collapseReply">Cancel</button>
+
+                <div class="card card-header d-flex flex-row align-items-center gray-header px-4 py-3">
+                  <ul class="navbar-nav me-4">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Body Text
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <a class="me-4" href="#">
+                    <span class="material-symbols-outlined">
+                      format_bold
+                    </span>
+                  </a>
+                  <a class="me-4" href="#">
+                    <span class="material-symbols-outlined">
+                      format_italic
+                    </span>
+                  </a>
+                  <a class="me-4" href="#">
+                    <span class="material-symbols-outlined">
+                      format_list_bulleted
+                    </span>
+                  </a>
+                  <a class="me-4" href="#">
+                    <span class="material-symbols-outlined">
+                      format_list_numbered
+                    </span>
+                  </a>
+                  <a class="me-4" href="#">
+                    <span class="material-symbols-outlined">
+                      image
+                    </span>
+                  </a>
+                  <a class="me-4" href="#">
+                    <span class="material-symbols-outlined">
+                      attachment
+                    </span>
+                  </a>
+                  <a class="me-4" href="#">
+                    <span class="material-symbols-outlined">
+                      chevron_left
+                    </span>
+                    <span class="material-symbols-outlined">
+                      chevron_right
+                    </span>
+                  </a>
+                </div>
+
+                <div class="card card-body px-4 py-3">
+                  <p class="gray-color text-area">Reply an answer…</p>
+                  <div class="w-100 d-flex justify-content-end align-items-end">
+                    <button class="btn btn-outline-success me-1" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseReply" aria-expanded="false" aria-controls="collapseReply">Cancel</button>
                     <button class="btn btn-success" type="button">Reply</button>
                   </div>
                 </div>
-               
+
+                
                 
               </div>
+
             </div>
             
             
@@ -153,7 +273,6 @@
 
 
           </div>
-          
         </div>
 
 

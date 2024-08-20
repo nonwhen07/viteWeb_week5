@@ -46,4 +46,26 @@
 
 .navbar{
   width: 296px;
+
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+  .icon-unfill {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  
+  .link-hover:hover{ // bootstrap的通用樣式都內建 !important，所以跟著使用蓋掉
+    color: #198754 !important;
+    border-left: 3px solid #198754 !important;
+  }
+
 }
