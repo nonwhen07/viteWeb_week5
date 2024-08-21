@@ -12,37 +12,48 @@
   //・如果只有左邊設定為auto，則左邊的空間變為最大值，導致右邊的空間被壓縮，因此置右，此為「margin-left: auto」置右的原理。
 
 
+  //-utility
+  .h1-fontstyle{
+    font-size: 24px;
+    font-weight: bold;
+  }
 
+  .gray-color{
+    color: #6C757D;
+  }
+  .gray2-color{
+    color: #CED4DA;
+  }
+  
+  .w-30{
+    width: 30%;
+  }
+  .w-65{
+    width: 65%;
+  } 
+  
+  .fz-14{
+    font-size: 14px;
+  }
+  .fz-16{
+    font-size: 16px;
+  }
+  .fz-20{
+    font-size: 20px;
+  }
+  .fz-24{
+    font-size: 24px;
+  }
 
+  .material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 22
+  }
 
 }
-
-
-
-.material-symbols-outlined{
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 22
-}
-// .icon-unfill {
-//   font-variation-settings:
-//   'FILL' 0,
-//   'wght' 400,
-//   'GRAD' 0,
-//   'opsz' 24
-// }
-
-
-.h1{
-  font-size: 24px;
-  font-weight: bold;
-}
-
-
-
-
 
 .link-success { // bootstrap的通用樣式都內建 !important，所以跟著使用蓋掉 
   background-color: #fff !important;
@@ -53,3 +64,7 @@
   background-color: #198754 !important;
   color: #fff !important;
 }
+
+
+
+
