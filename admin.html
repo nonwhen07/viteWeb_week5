@@ -7,8 +7,8 @@
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" /> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>admin</title>
-    <script type="module" crossorigin src="/viteWeb_week5/assets/bootstrap.min-688f4681.js"></script>
-    <link rel="stylesheet" href="/viteWeb_week5/assets/bootstrap-a2fd72e3.css">
+    <script type="module" crossorigin src="/viteWeb_week5/assets/bootstrap.min-ef94cd1b.js"></script>
+    <link rel="stylesheet" href="/viteWeb_week5/assets/bootstrap-c47c9a66.css">
   </head>
   <body>
     <div class="d-flex">
@@ -98,7 +98,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link border-start border-3 link-hover" href="#">
-              <span class="material-symbols-outlined align-middle">
+              <span class="material-symbols-outlined align-bottom">
                 video_library
               </span>Course
             </a>
@@ -148,9 +148,9 @@
 
         <header class="py-4">
           <nav class="navbar navbar-expand-lg w-100">
-            <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="container-fluid d-flex justify-content-between align-items-center px-0">
               <div class="headerleft d-flex align-items-center">
-                <h1 class="navbar-brand fw-bold mb-0 h1" href="#">Admin</h1>
+                <h1 class="navbar-brand fw-bold mb-0 h1-fontstyle" href="#">Admin</h1>
                 <button type="button" class="btn px-0 py-0" data-bs-toggle="modal" data-bs-target="#addModal">
                   <span class="material-symbols-outlined align-bottom text-success">
                     add
@@ -169,8 +169,8 @@
             </div>
           </nav>
 
-           <!-- Modal -->
-           <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <!-- AddAdminModal -->
+          <!-- <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -183,6 +183,113 @@
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                   <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fz-24 fw-bold" id="exampleModalLabel">Edit Admin</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="d-flex flex-column"> 
+                    <p class="fw-bold fz-20">
+                      Account
+                    </p>
+                    <div class="w-100">
+                      <label for="nameinput" class="form-label fz-14">Name</label>
+                      <input type="text" class="form-control" id="nameinput" placeholder="admin name" value="">
+                    </div>
+                    <div class="w-100">
+                      <label for="exampleFormControlInput1" class="form-label fz-14">Email</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" value="">
+                    </div>
+                    
+                    <hr class="my-4"/>
+
+                    <p class="fw-bold fz-20">
+                      Verification
+                    </p>
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <label for="VerifiedEmail" class="form-label">
+                          <span class="material-symbols-outlined text-danger align-bottom">
+                            warning
+                          </span>
+                          Verified
+                        </label>
+                        <p></p>
+                      </div>
+                      <button id="VerifiedEmail" type="button" class="btn btn-outline-success w-100">Send Verification Mail</button>
+                    </div>
+                    
+                    <hr class="my-4"/>
+
+                    <label for="Access Level" class="form-label fz-20 fw-bold">Access Level</label>
+                    <select id="Access Level" class="form-select" aria-label="Default select example">
+                      <option selected>-Choose access level-</option>
+                      <option value="1">student</option>
+                      <option value="2">teacher</option>
+                      <option value="3">Admin</option>
+                    </select>
+
+                    <hr class="my-4"/>
+
+                    <label class="form-label fz-20 fw-bold">Custom Access</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="Lecture">
+                      <label class="form-check-label" for="Lecture">
+                        Lecture
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Coupon" id="Coupon">
+                      <label class="form-check-label" for="Coupon">
+                        Coupon
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Message" id="Message">
+                      <label class="form-check-label" for="Message">
+                        Message
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Setting" id="Setting">
+                      <label class="form-check-label" for="Setting">
+                        Setting
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Task Menu" id="Task Menu">
+                      <label class="form-check-label" for="Task Menu">
+                        Task Menu
+                      </label>
+                    </div>
+
+                    <!-- <hr class="my-4"/>
+
+                    <label class="form-label fz-20 fw-bold">Deactivate Account</label>
+                    <label for="Deactivate" class="form-label fz-16 fw-bold text-danger"> 
+                      <span class="material-symbols-outlined text-danger align-bottom">
+                        warning
+                      </span>
+                      This cannot be undone!
+                    </label>
+                    <button id="Deactivate" type="button" class="btn btn-outline-danger rounded-0 w-100 mb-4">Deactivate This Account</button> -->
+
+                  </div>
+                </div>
+
+
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-success rounded-0 px-5 py-1" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-success rounded-0 px-5 py-1" style="width: 93px;">Add</button>
                 </div>
               </div>
             </div>
@@ -226,7 +333,6 @@
                   </button>
                 </td>
               </tr>
-
               <tr>
                 <th scope="row">#2</th>
                 <td>Zaina Goldsmith</td>
@@ -245,7 +351,6 @@
                   </button>
                 </td>
               </tr>
-
               <tr>
                 <th scope="row">#3</th>
                 <td>Mahima Lopez</td>
@@ -264,7 +369,6 @@
                   </button>
                 </td>
               </tr>
-
               <tr>
                 <th scope="row">#4</th>
                 <td>Pharrell Murray</td>
@@ -283,7 +387,6 @@
                   </button>
                 </td>
               </tr>
-
               <tr>
                 <th scope="row">#5</th>
                 <td>Annika Mcbride</td>
@@ -302,7 +405,6 @@
                   </button>
                 </td>
               </tr>
-
               <tr>
                 <th scope="row">#6</th>
                 <td>Fatimah Clark</td>
@@ -321,7 +423,6 @@
                   </button>
                 </td>
               </tr>
-
               <tr>
                 <th scope="row">#7</th>
                 <td>Klaudia Rhodes</td>
@@ -340,7 +441,6 @@
                   </button>
                 </td>
               </tr>
-
               <tr>
                 <th scope="row">#8</th>
                 <td>Tillie Lucero</td>
@@ -359,7 +459,6 @@
                   </button>
                 </td>
               </tr>
-
               <tr>
                 <th scope="row">#9</th>
                 <td>Sabrina Stephenson</td>
@@ -378,7 +477,6 @@
                   </button>
                 </td>
               </tr>
-
               <tr>
                 <th scope="row">#10</th>
                 <td>Annie Smith</td>
@@ -397,80 +495,163 @@
                   </button>
                 </td>
               </tr>
-              
-              
             </tbody>
           </table>
 
 
-          <!-- Modal -->
+          <!-- checkAdminModal -->
           <div class="modal fade" id="exModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
-                <div class="modal-header">
+                <!-- <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                </div> -->
                 <div class="modal-body">
-                  ...
+                  <div class="d-flex gap-3">
+                    <div class="w-30">
+                      <img src="/viteWeb_week5/assets/emir-3d7a4b39.jpeg" alt="" style="width: 141px; height: 141px;">
+                    </div>
+
+                    <div class="d-flex flex-column w-65">
+                      <div class="d-flex justify-content-between mb-2">
+                        <p class="fz-16 mb-0">#1</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <p class="fz-16 mb-0">Admin</p>
+                      <p class="fz-24 mb-2">Emir Wicks</p>
+                      <p class="fz-14 mb-3 gray-color">emir.wicks@mail.com</p>
+
+                    
+                      
+
+                      <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header mb-4" id="flush-headingOne">
+                            <button class="accordion-button btn-success collapsed px-2 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Verified
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <button class="btn btn-outline-danger rounded-0 me-3" style="width: 146px;" type="button">Deactivate</button>
+                            <button class="btn btn-success rounded-0" style="width: 92px;" type="button">Edit</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      
+                      
+
+                    </div>
+
+
+
+                  </div>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                   <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
-          <!-- Scrollable modal -->
+          <!-- Edit Admin Scrollable modal -->
           <div class="modal fade" id="exModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <h5 class="modal-title fz-24 fw-bold" id="exampleModalLabel">Edit Admin</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <div class="lorm50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusamus nulla assumenda, iusto eos blanditiis fugiat, ipsam natus consequatur labore eligendi itaque doloribus impedit ipsa voluptatibus molestiae et eveniet sapiente!  
-                    
-                    
-                  </div>
-                  <div class="lorm50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusamus nulla assumenda, iusto eos blanditiis fugiat, ipsam natus consequatur labore eligendi itaque doloribus impedit ipsa voluptatibus molestiae et eveniet sapiente!  
-                    
-                    
-                  </div>
+                  <div class="d-flex flex-column"> 
+                    <p class="fw-bold fz-20 ">
+                      Account
+                    </p>
+                    <div class="w-100">
+                      <label for="nameinput" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="nameinput" placeholder="admin name" value="Emir Wicks" disabled>
+                    </div>
+                    <div class="w-100">
+                      <label for="exampleFormControlInput1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" value="emir.wicks@mail.com" disabled>
+                    </div>
+                    <hr/>
+                    <p class="fw-bold fz-20">
+                      Verification
+                    </p>
+                    <div class="w-100">
+                      <div class="d-flex justify-content-between">
+                        <label for="VerifiedEmail" class="form-label">
+                          <span class="material-symbols-outlined align-bottom">
+                            check_circle
+                          </span>
+                          Verified
+                        </label>
+                        <p>2020/4/12</p>
+                      </div>
+                      <button id="VerifiedEmail" type="button" class="btn btn-outline-secondary w-100">Send Verification Mail</button>
+                    </div>
+                    <hr/>
+                    <label for="Access Level" class="form-label fz-20 fw-bold"> Access Level</label>
+                    <select id="Access Level" class="form-select" aria-label="Default select example">
+                      <option selected>Admin</option>
+                      <option value="">-Choose access level-</option>
+                      <option value="1">student</option>
+                      <option value="2">teacher</option>
+                      <option value="3">Admin</option>
+                    </select>
 
-                  <div class="lorm50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusamus nulla assumenda, iusto eos blanditiis fugiat, ipsam natus consequatur labore eligendi itaque doloribus impedit ipsa voluptatibus molestiae et eveniet sapiente!  
-                    
-                    
-                  </div>
-                  <div class="lorm50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusamus nulla assumenda, iusto eos blanditiis fugiat, ipsam natus consequatur labore eligendi itaque doloribus impedit ipsa voluptatibus molestiae et eveniet sapiente!  
-                    
-                    
-                  </div>
-                  <div class="lorm50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusamus nulla assumenda, iusto eos blanditiis fugiat, ipsam natus consequatur labore eligendi itaque doloribus impedit ipsa voluptatibus molestiae et eveniet sapiente!  
-                    
-                    
-                  </div>
-                  <div class="lorm50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusamus nulla assumenda, iusto eos blanditiis fugiat, ipsam natus consequatur labore eligendi itaque doloribus impedit ipsa voluptatibus molestiae et eveniet sapiente!  
-                    
-                    
-                  </div>
-                  <div class="lorm50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusamus nulla assumenda, iusto eos blanditiis fugiat, ipsam natus consequatur labore eligendi itaque doloribus impedit ipsa voluptatibus molestiae et eveniet sapiente!  
-                    
-                    
-                  </div>
-                  <div class="lorm50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusamus nulla assumenda, iusto eos blanditiis fugiat, ipsam natus consequatur labore eligendi itaque doloribus impedit ipsa voluptatibus molestiae et eveniet sapiente!  
-                    
-                    
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusamus nulla assumenda, iusto eos blanditiis fugiat, ipsam natus consequatur labore eligendi itaque doloribus impedit ipsa voluptatibus molestiae et eveniet sapiente!  
-                  <div class="lorm50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusamus nulla assumenda, iusto eos blanditiis fugiat, ipsam natus consequatur labore eligendi itaque doloribus impedit ipsa voluptatibus molestiae et eveniet sapiente!  
-                    
-                    
+                    <label class="form-label fz-20 fw-bold">Custom Access</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="Lecture">
+                      <label class="form-check-label" for="Lecture">
+                        Lecture
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Coupon" id="Coupon">
+                      <label class="form-check-label" for="Coupon">
+                        Coupon
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Message" id="Message">
+                      <label class="form-check-label" for="Message">
+                        Message
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Setting" id="Setting">
+                      <label class="form-check-label" for="Setting">
+                        Setting
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Task Menu" id="Task Menu">
+                      <label class="form-check-label" for="Task Menu">
+                        Task Menu
+                      </label>
+                    </div>
+
+                    <hr class="my-4"/>
+
+                    <label class="form-label fz-20 fw-bold">Deactivate Account</label>
+                    <label for="Deactivate" class="form-label fz-16 fw-bold text-danger"> 
+                      <span class="material-symbols-outlined text-danger align-bottom">
+                        warning
+                      </span>
+                      This cannot be undone!
+                    </label>
+                    <button id="Deactivate" type="button" class="btn btn-outline-danger rounded-0 w-100 mb-4">Deactivate This Account</button>
+
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-outline-success rounded-0 px-5 py-1" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-success rounded-0 px-4 py-1">Update</button>
                 </div>
               </div>
             </div>
